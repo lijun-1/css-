@@ -1,0 +1,279 @@
+div {
+    display: block;
+}
+
+html,
+body,
+#root,
+.all {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    height: 64px;
+    font-size: 14px;
+    padding: 0 50px;
+}
+
+span {
+    font-size: 12px;
+    margin: 5px 10px 10px 15px;
+    color: red;
+}
+
+h1 {
+    color: white;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 93%;
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+aside {
+    background-color: rgb(247, 247, 247);
+    flex: 0 0 200px;
+    width: 200px;
+    height: 100%;
+}
+
+.inheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 24px;
+    min-height: 48px;
+    border-bottom: 1px solid #f0f0f0;
+    height: 5%;
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+    table-layout: auto;
+    border-radius: 2px 2px 0 0;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.card {
+    background: #fff;
+    height: 100%;
+}
+
+.head-title {
+    padding: 16px 0;
+}
+
+.button-primary {
+    height: 24px;
+    padding: 0px 7px;
+    font-size: 14px;
+    color: #fff;
+    background: #1890ff;
+    border-color: #1890ff;
+    margin: 14px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+}
+
+tr {
+    height: 10px;
+}
+
+thead {
+    background-color: rgb(151, 146, 146);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-delete {
+    height: 24px;
+    padding: 0px 7px;
+    font-size: 14px;
+    color: #fff;
+    background: red;
+    border-color: red;
+    margin: 14px;
+}
+
+.background {
+    display: block;
+    background-color: black;
+    height: 100%;
+    font-family: 'Helvetica', 'Lucida Grande', 'Arial', sans-serif;
+    position: relative;
+    float: left;
+    width: 80%;
+}
+
+.from-container {
+    position: relative;
+    top: 40%;
+}
+
+form {
+    position: relative;
+    border: 1px ridge red;
+    box-sizing: border-box;
+    width: 20%;
+    left: 37%;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: colors;
+    animation-timing-function: ease;
+}
+
+form label {
+    display: block;
+    padding: 10px 10px 5px 15px;
+    font-size: 11px;
+    color: #777;
+}
+
+form input {
+    display: block;
+    margin: 5px 10px 10px 15px;
+    width: 85%;
+    background: #111;
+    box-shadow: 0px 0px 4px #000 inset;
+    outline: 1px solid #333;
+    border: 1px solid #000;
+    padding: 5px;
+    color: #444;
+    font-size: 16px;
+}
+
+form input:focus {
+    outline: 1px solid #555;
+    color: #FFF;
+}
+
+@keyframes colors {
+    0% {
+        border-color: #39f;
+    }
+    15% {
+        border-color: #F246C9;
+    }
+    30% {
+        border-color: #4453F2;
+    }
+    45% {
+        border-color: #44F262;
+    }
+    60% {
+        border-color: #F257D4;
+    }
+    75% {
+        border-color: #EDF255;
+    }
+    90% {
+        border-color: #F20006;
+    }
+    100% {
+        border-color: #39f;
+    }
+}
+
+@keyframes glowing-primary {
+    0% {
+        background-color: rgba(27, 154, 247, 0.3);
+        box-shadow: 0 0 20px 5px #FF0000
+    }
+    15% {
+        background-color: rgba(27, 154, 247, 0.8);
+        box-shadow: 0 0 20px 5px #FF7D00;
+    }
+    30% {
+        background-color: rgba(27, 154, 247, 0.8);
+        box-shadow: 0 0 20px 5px #FFFF00
+    }
+    45% {
+        background-color: rgba(27, 154, 247, 0.8);
+        box-shadow: 0 0 20px 5px #00FF00
+    }
+    60% {
+        background-color: rgba(27, 154, 247, 0.8);
+        box-shadow: 0 0 20px 5px #0000FF
+    }
+    75% {
+        background-color: rgba(27, 154, 247, 0.8);
+        box-shadow: 0 0 20px 5px #00FFFF
+    }
+    90% {
+        background-color: rgba(27, 154, 247, 0.8);
+        box-shadow: 0 0 20px 5px #FF00FF
+    }
+    100% {
+        background-color: rgba(27, 154, 247, 0.3);
+        box-shadow: 0 0 20px 5px #FF0000
+    }
+}
+
+input[type="submit"] {
+    animation-name: glowing-primary;
+    color: #1B9AF7;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    height: 40px;
+    left: 6px;
+    position: relative;
+}
+
+.upheader {
+    width: 100%;
+    height: 95%;
+}
+
+.clockdiv {
+    display: block;
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+
+#clock {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+}
